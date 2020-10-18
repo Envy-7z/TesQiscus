@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qiscus.sdk.ui.view.QiscusCircularImageView
+            android:id="@+id/chatImage"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/chatUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/chatImage"
+            android:text="Username"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chatUnread"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/chatTime"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/qiscus_circle_divider"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/qiscus_transparent_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chatReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatUsername"
+            android:layout_toRightOf="@+id/chatImage"
+            android:maxLines="3"
+            android:text="Review" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+</LinearLayout>

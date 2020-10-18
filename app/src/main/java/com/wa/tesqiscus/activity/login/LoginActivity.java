@@ -12,7 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.qiscus.sdk.Qiscus;
-import com.wa.tesqiscus.MainActivity;
+import com.wa.tesqiscus.activity.main.MainActivity;
 import com.wa.tesqiscus.R;
 import com.wa.tesqiscus.TesQiscusApp;
 
