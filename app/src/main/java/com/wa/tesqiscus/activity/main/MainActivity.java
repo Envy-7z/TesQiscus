@@ -21,6 +21,7 @@ import com.qiscus.sdk.ui.QiscusChannelActivity;
 import com.qiscus.sdk.ui.QiscusChatActivity;
 import com.wa.tesqiscus.R;
 import com.wa.tesqiscus.TesQiscusApp;
+import com.wa.tesqiscus.activity.contact.ContactActivity;
 import com.wa.tesqiscus.activity.login.LoginActivity;
 import com.wa.tesqiscus.utils.OnItemClickListener;
 
@@ -97,6 +98,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                         }
                     })
                     .show();
+        }
+        if (item.getItemId() == R.id.contact) {
+            startActivity(new Intent(this, ContactActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
