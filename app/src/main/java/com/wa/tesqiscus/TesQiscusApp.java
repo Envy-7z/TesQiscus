@@ -3,16 +3,12 @@ package com.wa.tesqiscus;
 import android.app.Application;
 import android.os.Build;
 
-import androidx.multidex.MultiDexApplication;
-
-import com.qiscus.jupuk.Jupuk;
 import com.qiscus.nirmana.Nirmana;
 import com.qiscus.sdk.Qiscus;
-import com.qiscus.sdk.chat.core.QiscusCore;
 import com.vanniktech.emoji.EmojiManager;
 import com.vanniktech.emoji.one.EmojiOneProvider;
 import com.wa.tesqiscus.utils.Constant;
-
+//untuk git commit dengan pesan"ini adalah pesan commit pertma anda seharusnya berpesan Task 2 : MainActivity berisi listmsg"
 public class TesQiscusApp extends Application {
     private static TesQiscusApp instance;
 
